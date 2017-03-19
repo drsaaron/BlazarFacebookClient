@@ -5,9 +5,11 @@
  */
 package com.blazartech.products.fbclient.impl.restfb.config;
 
+import com.blazartech.products.crypto.BlazarCryptoFile;
 import com.restfb.DefaultFacebookClient;
 import com.restfb.FacebookClient;
 import com.restfb.Version;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,11 +23,17 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RestFBConfig {
     
-    @Value("${com.blazartech.products.fbclient.impl.restfb.token}")
-    private String token;
+    @Autowired
+    private BlazarCryptoFile cryptoFile;
+    
+    @Value("${com.blazartech.products.fbclient.impl.restfb.token.resourceID}")
+    private String tokenResourceID;
+    
+    @Value("${com.blazartech.products.fbclient.impl.restfb.token.userID}")
+    private String tokenUserID;    
     
     @Bean
     public FacebookClient getFacebookClient() {
-        return new DefaultFacebookClient(token, Version.LATEST);
+        return new DefaultFacebookClient(cryptoFile.getPassword(tokenUserID, tokenResourceID), Version.LATEST);
     }
 }
