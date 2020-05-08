@@ -10,7 +10,8 @@ import com.blazartech.products.fbclient.Status;
 import com.restfb.FacebookClient;
 import com.restfb.Parameter;
 import com.restfb.types.FacebookType;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,7 @@ public class BTFacebookClientRestFBImpl implements BTFacebookClient {
     @Autowired
     private FacebookClient restClient;
     
-    private static final Logger logger = Logger.getLogger(BTFacebookClientRestFBImpl.class);
+    private static final Logger logger = LoggerFactory.getLogger(BTFacebookClientRestFBImpl.class);
     
     @Override
     public void postStatus(Status status) {
