@@ -15,7 +15,22 @@
         <groupId>org.springframework.boot</groupId>           
         <artifactId>spring-boot-starter-parent</artifactId>           
         <version>3.0.2</version>     
-    </parent> 
+    </parent>
+
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <name>my nexus</name>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
     
     <dependencies>
         <dependency>
