@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.blazartech</groupId>
     <artifactId>FacebookClient-mvn</artifactId>
-    <version>1.43-RELEASE</version>
+    <version>1.44-RELEASE</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>com.restfb</groupId>
             <artifactId>restfb</artifactId>
-            <version>2023.5.0</version>
+            <version>2023.6.0</version>
         </dependency>
         <dependency>
             <groupId>com.blazartech</groupId>
