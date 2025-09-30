@@ -3,17 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.blazartech</groupId>
     <artifactId>FacebookClient-mvn</artifactId>
-    <version>1.70-RELEASE</version>
+    <version>1.71-RELEASE</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>21</maven.compiler.release>
+        <maven.compiler.release>25</maven.compiler.release>
     </properties>
     
     <parent>  
         <groupId>org.springframework.boot</groupId>           
         <artifactId>spring-boot-starter-parent</artifactId>           
-        <version>4.0.0-M2</version>     
+        <version>4.0.0-M3</version>     
     </parent>
 
     <repositories>
@@ -39,12 +39,12 @@
         <dependency>
             <groupId>com.restfb</groupId>
             <artifactId>restfb</artifactId>
-            <version>2025.13.0</version>
+            <version>2025.14.0</version>
         </dependency>
         <dependency>
             <groupId>com.blazartech</groupId>
             <artifactId>BlazarCryptoFile-mvn</artifactId>
-            <version>1.59-RELEASE</version>
+            <version>1.60-RELEASE</version>
         </dependency>
     </dependencies>
 </project>
