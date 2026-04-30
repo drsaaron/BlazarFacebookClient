@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.blazartech</groupId>
     <artifactId>FacebookClient-mvn</artifactId>
-    <version>1.76-RELEASE</version>
+    <version>1.77-RELEASE</version>
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -11,10 +11,10 @@
     </properties>
     
     <parent>  
-        <groupId>org.springframework.boot</groupId>           
-        <artifactId>spring-boot-starter-parent</artifactId>           
-        <version>4.1.0-M4</version>     
-    </parent>
+        <groupId>com.blazartech</groupId>           
+        <artifactId>blazarjavaparent</artifactId>           
+        <version>1.22-RELEASE</version>     
+    </parent> 
 
     <repositories>
         <repository>
@@ -39,7 +39,7 @@
         <dependency>
             <groupId>com.restfb</groupId>
             <artifactId>restfb</artifactId>
-            <version>2026.1.0</version>
+            <version>2026.2.0</version>
         </dependency>
         <dependency>
             <groupId>com.blazartech</groupId>
